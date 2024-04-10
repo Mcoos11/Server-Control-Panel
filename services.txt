@@ -1,0 +1,4 @@
+minecraft_server1.service
+minecraft_server2.service
+valheim_server.service
+mysqld.service

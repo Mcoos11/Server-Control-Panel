@@ -1,0 +1,4 @@
+To add new service to control panel:
+1. Add service name to services.txt
+2. Add all required, management options to /etc/sudoers.d/control_panel_access using:
+	sudo visudo -f /etc/sudoers.d/

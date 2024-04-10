@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Panel Kontrolny UbuServHome1{% endblock title %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'panel/home.css' %}",0>
+{% endblock stylesheets %}
+
+{% block scripts %}
+    <script src="{% static 'panel/home.js' %}" defer></script>
+{% endblock scripts %}
+
+{% block content %}
+    <form method="POST" class="login-form" style="max-width:500px; margin:auto; padding-bottom: 40%">
+        {% csrf_token %}
+        <label class="col-form-label" for="pass">Hasło:</label>
+        <input class="form-control mb-3" type="password" name="pass"></input>
+
+        <button class="btn btn-secondary" type="submit">Zatwierdź</button>
+    </form>
+{% endblock content %}

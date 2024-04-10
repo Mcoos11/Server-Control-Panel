@@ -1,0 +1,98 @@
+.logout-btn{
+    position: fixed;
+    right: 10px;
+    top: 12px;
+}
+#server-menu{
+    margin: auto;
+    margin-top: 60px;
+    max-width: 1000px;
+    min-width: 330px;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    border: 5px solid #3091e7;
+    border-radius: 20px;
+    background-color: #3091e738;
+}
+.service-menu{
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1000px;
+    min-width: 330px;
+    width: 60vw;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.service-on{
+    border: 5px solid #00b500;
+    background-color: #00b50042;
+}
+.service-off{
+    border: 5px solid #b50000;
+    background-color: #b5000042;
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.service_controls{
+    width: 60%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.service_control, .service_info{
+    width: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.filter-light{
+    filter: invert(100%) saturate(30%);
+}
+.service_infos{
+    font-size: large;
+}
+.service_infos p{
+    margin: 0 !important
+}
+.info_field_box{
+    margin-bottom: 10px;
+    width: 90%;
+}
+.info_field{
+    width: 100%;
+    background-color: #f1eded;
+    margin-top: 10px;
+    padding: 5px;
+    max-height: 35vw;
+    min-height: 20px;
+    white-space: nowrap;
+    overflow: auto;
+}
+.info_close{
+    margin-left: 90%;
+    width: 30px;
+    height: 30px;
+    padding: 1px !important;
+}
+@media only screen and (max-width: 992px){
+    .service_control, .service_info{
+        width: 60px;
+        font-size: 12px !important;
+    }
+	#server-menu, .service-menu{
+		width: 100%;
+	}
+}
